@@ -12,9 +12,14 @@ Each test file is a `js` file which needs to expose two things:
 * `name` - A name for a test
 * `run` - A function that run all the tests.
 
+To see details about the current tests, please see Readme.MD file in `benchmarks` folder.
+
+When you run benchmarks on your machine - it will be appricated if you can add your results to the `Results.MD` file.
+
 ## Adding new tests
 If you add more tests, please follow this pattern.
 Also, add a `require` to your `js` test file to the `module.exports` of the `index.js` file in the `benchmarks` folder.
+Please also add a test item and description to the Readme.MD file inside `benchmarks`.
 
 ## Test structures
 The run function typically includes CPU versions of a function and GPU versions of it - then run benchmarkings for all of them, using `Benchmark.JS`.
