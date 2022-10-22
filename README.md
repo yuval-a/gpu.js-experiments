@@ -18,7 +18,7 @@ Also, add a `require` to your `js` test file to the `module.exports` of the `ind
 
 ## Test structures
 The run function typically includes CPU versions of a function and GPU versions of it - then run benchmarkings for all of them, using `Benchmark.JS`.
-There is a wrapper around `Benchmark.JS` in the root folder that makes running the benchmarking more easy, to run tests - require the module - which is a function that returns a Promise. The return a call to it, where the arguments are objects describing each test in the following manner:
+There is a wrapper around `Benchmark.JS` in the root folder, called `doBenchmark` that makes running the benchmarking more easy, to run tests - require the module - which is a function that returns a Promise. The return a call to it, where the arguments are objects describing each test in the following manner:
 ```
 {
   name: <Name of the test>,
