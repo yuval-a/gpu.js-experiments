@@ -29,7 +29,7 @@ There is a wrapper around `Benchmark.JS` in the root folder, called `doBenchmark
 
 # General information about GPUs
 A GPU (Graphical Processing Unit) is a processing unit mainly dedicated for making calculations and computations related to graphics - these are mostly matrix multiplications and vector calculations.
-GPUs typically run programs that are called "Shaders". A popular high-level framework to upload and run these programs in `OpenGL` who runs a language called `GLSL` (GL Shading Language).
+GPUs typically run programs that are called "Shaders". A popular high-level framework to upload and run these programs is `OpenGL` which can run a language called `GLSL` (GL Shading Language).
 Javascript has an API called `WebGL` which exposes access to an OpenGL style library - and the ability to compile and run GLSL code on the GPU.
 GPU.JS is a "wrapper" library around this API (and similar wrapper APIs for Node.JS) - that includes a Javascript parser - that can "translate" Javascript code into GLSL - and then run calculations in the GPU. GPUs typicially have many cores (sometimes hundreds, thousands or more, depending on the type and strength) - 
 these allow for **real** parallel computations - which, in some cases can be faster than calculations done in the CPU. I say "in some cases" - because typically CPUs have "stronger" cores when it comes to "general" calculations, where the GPU cores are typicially more optimized for graphics related calculations.
