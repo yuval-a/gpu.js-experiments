@@ -35,7 +35,7 @@ GPU.JS is a "wrapper" library around this API (and similar wrapper APIs for Node
 these allow for **real** parallel computations - which, in some cases can be faster than calculations done in the CPU. I say "in some cases" - because typically CPUs have "stronger" cores when it comes to "general" calculations, where the GPU cores are typicially more optimized for graphics related calculations.
 There are more limitations existing for using the GPU cores, which are enforced by GPU.JS:
 
-1. GPU cores can simultaniously run the same single function.
+1. GPU cores can only simultaniously run the same single function.
 2. All cores must have the same dataset as an input (typically, an Array, but the items inside can be of different data types).
 3. GPU.JS automatically uploads certain "translated" implementations of common JS operations in the form of GLSL functions, these are pretty limited though: 
 for example when you write a GPU function using GPU.JS (called a "Kernel") - you can use arrays, but you cannot use most of the Array API functions JS natively have, etc.
