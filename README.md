@@ -1,6 +1,6 @@
 # gpu.js-experiments
 
-This repostiory is dedicated to experiments and benchmarks using the General Purpose Computing GPU Javascript library [GPU.JS](https://github.com/gpujs/gpu.js).
+This repository is dedicated to experiments and benchmarks using the General Purpose Computing GPU Javascript library [GPU.JS](https://github.com/gpujs/gpu.js).
 
 # Getting started
 * After installing node modules using `npm install`, `GPU.JS`, and `Benchmark.JS` (the library used for benchmarking) will be installed.
@@ -76,11 +76,11 @@ I have experimented with the `Manage 3D Settings` in the NVIDIA Control Panel, a
 * Texture filtering - Trilinear optimization: `Off`.
 * Threaded optimization: `Auto`.
 * **Triple buffering: `Off`**.
-* **`Vertical sync: `Off`**.
-* `Virtual Reality pre-rendered frames: 1`
-* Prefer high performance: always
-* Triple buffering off
-* Vertical sync off
+* **Vertical sync: `Off`**.
+* Virtual Reality pre-rendered frames: `1`.
+* Prefer high performance: `always`.
+* Triple buffering: `off`.
+* Vertical sync: `off`.
 
 These are specific to the GPGPU experiments - so you might wanna set those in the Program Settings tab explicetely for NodeJS.
 
